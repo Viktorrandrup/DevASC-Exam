@@ -1,0 +1,6 @@
+['Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       192.168.56.101  YES DHCP   up                    up      
+Loopback12             12.1.2.3        YES other  up                    up', 'Cisco IOS XE Software, Version 16.09.05
+Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are']

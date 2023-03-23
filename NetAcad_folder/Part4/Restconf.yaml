@@ -1,0 +1,18 @@
+---
+- name: AUTOMATIC BACKUP OF RUNNING-CONFIG
+  hosts: CSR1kv
+  gather_facts: false
+  connection: local
+ 
+  tasks:
+   - name: DISPLAYING THE INTERFACES
+     ios_command:
+       commands:
+         - show ip int brief
+         - show version | include Cisco IOS
+     register: config
+
+   - name: SAVE OUTPUT TO ./backups/
+     copy:
+       content: "{{ config.stdout | replace('\\n', '\n') }}"
+       dest: "backups/show_int.ver_{{ inventory_hostname }}.txt"
